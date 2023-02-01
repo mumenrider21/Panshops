@@ -1,0 +1,391 @@
+
+/*iPhoneおよび共通設定*/
+
+
+.slider {
+    width: 500px;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+  
+  }
+  .slider-item {
+    width: 300px;
+    float: left;
+  }
+  img{
+    width :100%;
+  }
+  .slider-inner {
+    width: 300%;
+    animation: slider 15s infinite ease;
+  }
+  
+  @keyframes slider {
+      0% {
+      transform: translateX(0);
+      }
+      33% {
+      transform: translateX(-300px);
+      }
+      66% {
+      transform: translateX(-600px);
+      }
+      100% {
+      transform: translateX(0);
+      }
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .he{
+    display: flex;
+    width: 100px;
+    height: 100;
+    background-color: aqua;
+    list-style: none;
+  }
+
+
+  .contents {
+    overflow: hidden;
+ }
+ .item {
+    float: left;
+    padding: 20px 10px;
+    text-align: center;
+    
+ }
+.item img{
+    width:190px;
+    
+}
+
+#moji{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: antiquewhite;
+    color: crimson;
+    font-family:"Arial";
+}
+#taitoru{
+    text-align: center;
+    padding-top: 10px;
+ 
+}
+#itiosi{
+    background-color:#486E1D;
+}
+
+
+/* 黒板風 */
+.kokuban {
+ position: relative;
+ margin: 2em auto;
+ padding: 1em;
+ width: 90%; /* ボックス幅 */
+ background: #006633; /* ボックス背景色 */
+ color: #fff; /* 文章色 */
+ border: 5px solid #C0C0C0; /* 枠線 */
+ border-radius: 2px; /* 角の丸み */
+ box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+}
+.kokuban::before,
+.kokuban::after {
+ position: absolute;
+ content: '';
+ bottom: 0;
+} 
+.kokuban::before {
+ width: 20px;
+ right: 10px;
+ border: solid 3px #ff42a0; /*チョークピンク */
+ border-radius: 3px 2px 0 2px;
+}
+.kokuban::after {
+ width: 15px;
+ right: 45px;
+ border: solid 3px #fff; /*チョーク白 */
+ border-radius: 8px 5px 2px 5px;
+}
+
+.example{
+  display: flex;
+  flex-wrap: wrap;
+}
+.example>div{
+  width: 25%;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  padding: 10px;
+  background: antiquewhite;
+}
+
+
+h2 {
+  position: relative;
+   margin: 30px;
+   text-align: center;
+ }
+ 
+ h2:before,
+ h2:after {
+   position: absolute;
+   z-index: 0;
+   bottom: -10px;
+   display: block;
+   content: '';
+   border: 1em solid #d90606;
+ }
+ 
+ h2:before {
+   left: -30px;
+   border-left-width: 15px;
+   border-left-color: transparent;
+ }
+ 
+ h2:after {
+   right: -30px;
+   border-right-width: 15px;
+   border-right-color: transparent;
+ }
+ 
+ h2 span {
+   position: relative;
+   z-index: 1;
+   display: block;
+   padding: 1rem 2rem;
+   color: #fff;
+   background: #fa4141;
+ }
+ 
+ h2 span:before,
+ h2 span:after {
+   position: absolute;
+   bottom: -10px;
+   display: block;
+   width: 10px;
+   height: 10px;
+   content: '';
+   border-style: solid;
+   border-color: #b70505 transparent transparent transparent;
+ }
+ 
+ h2 span:before {
+   left: 0;
+   border-width: 10px 0 0 10px;
+ }
+ 
+ h2 span:after {
+   right: 0;
+   border-width: 10px 10px 0 0;
+ }
+ ul.list{
+  text-align: center;
+ }
+.text1,.text2,.text3{
+border: aqua 2px transparent;
+padding: 2em;
+display: inline-block;
+background-color: #fff;
+border: #4e7bcc 1px solid; /*境界線の指定*/
+
+}
+
+/*フッター             */
+#footer {
+  position: relative;
+  margin-top: 40px;
+  color: rgb(56, 71, 72);
+}
+#footer a {
+  text-decoration: none;
+  color: rgb(56, 71, 72);
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+#footer .primary {
+  padding: 40px 20px;
+  background: wheat;
+}
+#footer .secondary {
+  display: flex;
+  padding: 40px 20px;
+  background: rgba(231, 190, 10, 0.636);
+}
+
+@media screen and (max-width: 767px) {
+  #footer .primary {
+    padding: 20px 20px;
+    background: rgba(252, 248, 131, 0.558);
+  }
+  #footer .secondary {
+    display: block;
+    padding: 20px 20px;
+  }
+}
+
+/* footer-logo */
+
+#footer .logo {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 26px;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  #footer .logo {
+    font-size: 16px;
+  }
+}
+
+/* address */
+
+.address {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .address {
+    font-size: 12px;
+  }
+}
+
+/* navi */
+
+.navi-row {
+  display: flex;
+  margin-top: 40px;
+}
+#footer .navi {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#footer .navi li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+#footer .navi li:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .navi-row {
+    display: block;
+    margin-top: 15px;
+  }
+  #footer .navi {
+    font-size: 12px;
+  }
+  #footer .navi li {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
+
+/* sns-navi */
+
+#footer .sns-navi {
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+#footer .sns-navi li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+  font-size: 20px;
+}
+#footer .sns-navi li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #footer .sns-navi {
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  #footer .sns-navi li {
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 18px;
+  }
+}
+
+/* sitenavi */
+
+#footer .sitenavi {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#footer .sitenavi li {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+#footer .sitenavi li:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #footer .sitenavi {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+/* copyright */
+
+#footer .copyright {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  #footer .copyright {
+    width: 100%;
+    margin: 20px 0 0;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/*iPadの設定*/
+@media screen and (min-width: 600px){
+
+}
+
+/*PCサイズの設定*/
+@media screen and (min-width: 835px) {
+   
+
+  .retu {
+    display: flex;
+    justify-content: flex-start; /*--justify-contentを指定--*/
+    padding: 20px　20px 20px 20px;
+    
+    /*--以下装飾--*/
+  
+  }
+  img#mypic{
+    width: 400px;
+    padding-left: 28px;
+  }
+
+
+
+}
