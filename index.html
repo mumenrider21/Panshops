@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./images/favicon.ico">
-	<title>PiyoAlbum</title>
+	<title>PiyoForm</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./libs/bootstrap/carousel.css">
@@ -15,12 +13,10 @@
 	
 	<!-- Header(Start) -->
 	<header>
-	
-	
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					<img src="./images/logo.png">PiyoAlbum
+					<img src="./images/logo.png">PiyoForm
 				</a>
 			</div>
 		</nav>
@@ -29,88 +25,73 @@
 
 	<!-- Main(Start) -->
 	<main>
-		
-	<br>
-	<br>
-	<br>
-	<br>
+		<div class="container mt-5">
+		<h3>FromControl</h3>
 
-			<h1 class="text-center">Portfolios</h1>
-			<p class="text-center">ポートフォリオサイトは自身が作った作品をまと<br>めたWebサイトのことで、新しいクライアントに<br>対してスキルや
-				実績をアピールすることを目的とし<br>ています。
-			</p>
-			<div class="text-center ">
-				<a href="#" class="btn btn-primary mb-5">Main call to action</a>
-				<a href="#" class="btn btn-secondary mb-5">Secondary action</a>
-			
-			</div>
-			<br>
-			<br>
-			<br>
-			
-
-
-
-	<div class="container-fluid p-5 bg-light">
-		<div class="row">
-			<div class="col">
-				<div class="card" style="max-width: 27rem;">
-					<img class="card-img-top" src="images/logo_html.png" alt="htmlロゴ">
-					<div class="card-body">
-						<p class="card-text">HyperText Markup Language(ハイパーテキスト マークアップ ランゲージ)は、ハイパーテキストを記述するためのマークアップ言語の1つで、主にWorld Wide Web(WWW)において、ウェブページを表現するために用いられます。</p>
-						<a href="#" class="btn btn-primary">Demo</a>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card" style="max-width: 27rem;">
-					<img class="card-img-top" src="images/logo_css.png" alt="cssロゴ">
-					<div class="card-body">
-						<p class="card-text">CSS(Cascading Style Sheet)は、HTMLやXMLの要素をどのように修飾(表示)するかを指示する仕様の一つで、文書の構造と体裁を分離させるという理念を実現するために提唱されたスタイルシートの具体的な仕様の一つです。</p>
-						<a href="#" class="btn btn-primary">Demo</a>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card" style="max-width: 27rem;">
-					<img class="card-img-top" src="images/logo_javascript.png" alt="jsロゴ">
-					<div class="card-body">
-						<p class="card-text">JavaScriptはプログラミング言語であり、HTMLやCSSと並ぶ、WWWの中核技術の一つである。利用される場面はフロント/バックエンド、アプリなど、ブラウザからサーバ、デスクトップからスマートフォンまで多岐にわたります。</p>
-						<a href="#" class="btn btn-primary">Demo</a>
-					</div>
-				</div>
-			</div>
+		<div class="mb-3">
+			<label class="form-label" for="email">Email address</label>
+			<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="piyo@piyo.com">
+			<small id="emailHelp" class="form-text text-muted"></small>
 		</div>
-		<div class="row mt-3">
-			<div class="col">
-				<div class="card" style="max-width: 27rem;">
-					<img class="card-img-top" src="images/logo_jquery.png" alt="jqueryロゴ">
-					<div class="card-body">
-						<p class="card-text">jQuery(ジェイクエリー)は、ウェブブラウザ用のJavaScriptコードをより容易に記述できるようにするために設計されたJavascriptライブラリです。ジョン・レシグが、2006年1月に開催された"BarCamp NYC"でリリースしました。</p>
-						<a href="#" class="btn btn-primary">Demo</a>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card" style="max-width: 27rem;">
-					<img class="card-img-top" src="images/logo_bootstrap.png" alt="bootstrapロゴ">
-					<div class="card-body">
-						<p class="card-text">BootstrapはウェブサイトやWebアプリケーションを作成するフロントエンドフレームワークである。タイポグラフィ、ファーム、ボタン、ナビゲーション、その他構成要素や拡張など、HTMLおよびCSSベースのテンプレートとして用意されています。</p>
-						<a href="#" class="btn btn-primary">Demo</a>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card" style="max-width: 27rem;">
-					<img class="card-img-top" src="images/logo_vue.png" alt="vue.jsロゴ">
-					<div class="card-body">
-						<p class="card-text">Vue.jsは、Webアプリケーションにおけるユーザーインターフェイスを構築するための、JavaScriptフレームワークである。他のJavaScriptライブラリを使用するプロジェクトへの導入において、容易になるように設計されています。</p>
-						<a href="#" class="btn btn-primary">Demo</a>
-					</div>
-				</div>
-			</div>
-		</div>
+
+		<div class="mb-3">
+			<label class="form-label" for="textarea1">Example textarea</label>
+		<textarea class="form-control" id="textarea1" rows="3"></textarea>
 	</div>
+
+	<select class="form-select" aria-label="プルダウンメニュー">
+		<option selected>Open this select menu</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+	</select>
+
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" id="checkbox1" value="option1">
+			<label class="form-check-label" for="check1">Default checkbox</label>
+	</div>
+
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" checked id="checkbox2" value="option2">
+			<label class="form-check-label" for="check2">Checked checkbox</label>
+	</div>
+<br>
+	<div class="foem-check">
+		<input type="radio" class="form-check-input" id="radios1" value="option1">
+		<label class="form-check-label" for="radios1">
+			Default radio
+		</label>
+	</div>
+	<div class="foem-check ">
+		<input type="radio" class="form-check-input" checked id="radios2" value="option2">
+		<label class="form-check-label" for="radios2">
+			Checked switch
+		</label>
+	</div>
+<br>
+	<div class="form-check form-switch">
+		<input class="form-check-input" type="checkbox" value="" id="check1">
+		<label class="form-check-label1" for="check1">
+			Default switch
+		</label>
+	</div>
+
+	<div class="form-check form-switch">
+		<input class="form-check-input" type="checkbox" value="" id="check1" checked>
+		<label class="form-check-label1" for="check1">
+			Checked switch
+		</label>
+	</div>
+
+<br>
+
+	<div class="mb-3">
+		<button class="btn btn-primary" type="button">Submit</button>
+		<button class="btn btn-secondary" type="button">Reset</button>
+	</div>
+
+</div>
+	</main>
 	<!-- Main(End) -->
 
 	<!-- Footer(Start) -->
